@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+        let a = 2;
+        switch (1) {
+          case 1:
+            document.write('first');
+            break;
+          case 2:
+            document.write('second');
+          default:
+        }
+
+        let a= parseInt(prompt("enter the value"))
+        if(a>0){
+        a="Number is positive"
+        }
+        else if (a==0){
+        a= " Number is zero"
+        }else{
+        a= "number is negative"
+        }
+        console.log(a)
+
+      let a = parseInt(prompt("enter the number"));
+      console.log(a)
+      if (a % 5==0 && a % 11==0) {
+        ('it is divisible');
+      } else {
+        ('not divisible');
+      }
+
+      let number =parseInt (prompt("enter the year"))
+      let a= number%4==0 && number%100==0? "leap year" : "not leap year"
+      console.log(a)
+
+      let number =parseInt (prompt("enter the number"))
+      let a= number%2==0? "even" : "odd"
+      console.log(a)
+
+      let year =parseInt (prompt("enter the year"))
+      if((year%4==0 && year%100 !==0)|| (year %400==0)){document.write("leap year")}
+else{
+document.write ( "not leap year")
+}
+
+ let letter =prompt("enter a letter")
+if (letter =='a' || letter=='e' || letter =='i' || letter=='o'|| letter=='u') {
+document.write("vowel")
+
+}
+else{
+  document.write("consonant")
+}
+
+let a =prompt("enter the length of  a")
+let b =prompt("enter the length of b")
+let c = prompt("enter the length of c")
+if(a+b>c && a+c>b && b+c>a) {
+document.write("it is triangle")
+
+}
+else{
+  document.write("it is not triangle")
+}
+
+    </script>
+  </body>
+</html>
