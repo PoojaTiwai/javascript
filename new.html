@@ -6,108 +6,556 @@
     <title>Document</title>
   </head>
   <body>
+    <!--  -->
     <script>
-        let a = 2;
-        switch (1) {
-          case 1:
-            document.write('first');
-            break;
-          case 2:
-            document.write('second');
-          default:
-        }
+              let a = 2;
+              switch (1) {
+                case 1:
+                  document.write('first');
+                  break;
+                case 2:
+                  document.write('second');
+                default:
+              }
 
-        let a= parseInt(prompt("enter the value"))
-        if(a>0){
-        a="Number is positive"
-        }
-        else if (a==0){
-        a= " Number is zero"
-        }else{
-        a= "number is negative"
-        }
-        console.log(a)
+              let a= parseInt(prompt("enter the value"))
+              if(a>0){
+              a="Number is positive"
+              }
+              else if (a==0){
+              a= " Number is zero"
+              }else{
+              a= "number is negative"
+              }
+              console.log(a)
 
-      let a = parseInt(prompt("enter the number"));
-      console.log(a)
-      if (a % 5==0 && a % 11==0) {
-        ('it is divisible');
-      } else {
-        ('not divisible');
+            let a = parseInt(prompt("enter the number"));
+            console.log(a)
+            if (a % 5==0 && a % 11==0) {
+              ('it is divisible');
+            } else {
+              ('not divisible');
+            }
+
+            let number =parseInt (prompt("enter the year"))
+            let a= number%4==0 && number%100==0? "leap year" : "not leap year"
+            console.log(a)
+
+            let number =parseInt (prompt("enter the number"))
+            let a= number%2==0? "even" : "odd"
+            console.log(a)
+
+            let year =parseInt (prompt("enter the year"))
+            if((year%4==0 && year%100 !==0)|| (year %400==0)){document.write("leap year")}
+      else{
+      document.write ( "not leap year")
       }
 
-      let number =parseInt (prompt("enter the year"))
-      let a= number%4==0 && number%100==0? "leap year" : "not leap year"
-      console.log(a)
+       let letter =prompt("enter a letter")
+      if (letter =='a' || letter=='e' || letter =='i' || letter=='o'|| letter=='u') {
+      document.write("vowel")
 
-      let number =parseInt (prompt("enter the number"))
-      let a= number%2==0? "even" : "odd"
-      console.log(a)
+      }
+      else{
+        document.write("consonant")
+      }
 
-      let year =parseInt (prompt("enter the year"))
-      if((year%4==0 && year%100 !==0)|| (year %400==0)){document.write("leap year")}
-else{
-document.write ( "not leap year")
+      let a =prompt("enter the length of  a")
+      let b =prompt("enter the length of b")
+      let c = prompt("enter the length of c")
+      if(a+b>c && a+c>b && b+c>a) {
+      document.write("it is triangle")
+
+      }
+      else{
+        document.write("it is not triangle")
+      }
+      let name = prompt (`enter your name`)
+      let lastname = prompt(`enter your lastname`)
+      let age =prompt(`enter your age `)
+      let moblieno= prompt(`enter your mobile no`)
+      if (age>=30) {
+
+        document.write(mobileno+ `your mobile no 000000`)
+        document.write(age+ `youe age`)
+      }
+      else if (age<=20 && age <=50) {
+      document.write(name+ `your name`)
+      document.write(lastname+ `your last name`)
+
+      }
+
+      else {
+        document.write(`none`)
+      }
+      for (let i=0 ; i<=10; i++ ) {
+        document.write(" " ,i)
+      }
+
+      for (let i=10 ; i>=0; i--) {
+      document.write(" ",i)
+
+      }
+
+      let a= parseInt(prompt("enter your first number"))
+      let b= parseInt(prompt("enter your first number"))
+      for (let i=0 ; i<=10; i++ ) {
+        document.write(" " ,i)
+      }
+
+      let a= parseInt(prompt("enter your first number"))
+      let b= parseInt(prompt("enter your second number"))
+      let c= parseInt(prompt("enter your third number"))
+      for (i=a; i<=b; i++) {
+        document.write(" ",i*c)
+      }
+
+      for (let i=0; i<=100; i++)  {
+        if (i%3==0) {
+          document.write
+            (fizz)
+          }
+          else if(i%5==0) {
+            document.write
+              ( buzz)
+            }
+
+          else{
+            document.write(false)
+          }
+        }
+      let a=0;
+      for (let i=0; i<=5; i++) {
+
+       a= a+i
+      document.write("sum of i is", a)
+      }
+
+
+      let a=0
+      for (let i=0; i<=20; i++) {
+      if(i%2==0 ) {
+
+        a=a+i
+        document.write("sum of i is", a)
+      }
+    
+    
+      else {
+        document.write()
+      }
+    }
+
+
+    let a="hello"
+for (let i=0; i<a.length; i++){
+  if (i%2==0){
+    
+  console.log(a[i])
+  }
 }
 
- let letter =prompt("enter a letter")
-if (letter =='a' || letter=='e' || letter =='i' || letter=='o'|| letter=='u') {
-document.write("vowel")
 
-}
-else{
-  document.write("consonant")
-}
 
-let a =prompt("enter the length of  a")
-let b =prompt("enter the length of b")
-let c = prompt("enter the length of c")
-if(a+b>c && a+c>b && b+c>a) {
-document.write("it is triangle")
+      for (let i=0; i<=20; i++) {
+      if(i%3==0 && i%5==0) {
+        document.write(i)
+      }
 
-}
-else{
-  document.write("it is not triangle")
-}
-let name = prompt (`enter your name`)
-let lastname = prompt(`enter your lastname`)
-let age =prompt(`enter your age `)
-let moblieno= prompt(`enter your mobile no`)
-if (age>=30) {
+      }
 
-  document.write(mobileno+ `your mobile no 000000`)
-  document.write(age+ `youe age`)
-}
-else if (age<=20 && age <=50) {
-document.write(name+ `your name`)
-document.write(lastname+ `your last name`)
+      for(let i=1; i<=4; i++) {
+      let Name= prompt("enter your name")
+      document.write("hi your name is:" ,Name)
+      }
 
-}
+      let term = prompt("enter  number")
+       for(let i=1; i<=term; i++) {
+      let Name= prompt("enter your name")
+      document.write("hi your name is:" ,Name)
+      }
 
-else {
-  document.write(`none`)
-}
-for (let i=0 ; i<=10; i++ ) {
-  document.write(" " ,i)
-}
+      let fact=1;
+      for (let i=1; i<=4; i++) {
+        document.write(fact=fact*i)
+      }
 
-for (let i=10 ; i>=0; i--) {
-document.write(" ",i)
+       let fact=1;
+      for (let i=1; i<=4; i++) {
+        document.write(fact*=i)
+      }
 
-}
+      let i=0;
+      while(i<=10) {
+        document.write(i)
+        i++
+      }
+      let i=0;
+    while(i<=10){
+document.write(i)
+i++
 
-let a= parseInt(prompt("enter your first number"))
-let b= parseInt(prompt("enter your first number"))
-for (let i=0 ; i<=10; i++ ) {
-  document.write(" " ,i)
+    }
+let i=12;
+while(i<=24){
+  document.write(i)
+  i++
 }
 
-let a= parseInt(prompt("enter your first number"))
-let b= parseInt(prompt("enter your second number"))
-let c= parseInt(prompt("enter your third number"))
-for (i=a; i<=b; i++) {
-  document.write(" ",i*c)
+
+
+let sum=0;
+let i=1;
+while(i<=100){
+  sum=sum+i
+  document.write("sum of i is:", sum)
+  i++
 }
+
+
+let a=1;
+switch(1) {
+  case(1): 
+  document.write("h1")
+  break;
+  case(2): 
+  document.write("h2")
+ default:{
+  document.write("false")
+ }
+  
+}
+
+
+
+
+
+
+
+for (let i=1 ; i<=5; i++) {
+  console.log(`value of outer loop` , i)
+  for (let j=1; j<=5; i++){
+    console.log(`value of inner loop` ,j)
+  }
+  }
+
+let i=0
+do { document.write(i)
+i++
+} while(i<=5)
+
+let i=0
+do { i++
+   document.write(i)
+
+} while(i<=5)
+
+for (let i=1; i<=5; i++) {
+  for (let j=1; j<=i; j++) {
+    document.write("*")
+  }
+ document.write("<br>")
+}
+
+for(let i=1; i<=5; i++) {
+  for(let j=1; j<=i; j++) {
+    document.write(i)
+
+  }
+  document.write("<br>")
+}
+
+
+
+let i=1;
+while(i<=5){
+  let j=1;
+  while(j<=i)
+  {
+    document.write("*")
+    j++
+  }
+  
+  document.write("<br>")
+  i++
+}
+
+
+
+for (let i=1; i<=5; i++) {
+  for (let j=1; j<=i; j++) {
+    document.write(j)
+  }
+  document.write("<br>")
+}
+
+
+for (let i=1; i<=15; i++) {
+  for (let j=1; j<=i; j++) {
+    document.write(i+j)
+
+  }
+  document.write("<br>")
+}
+
+
+
+let a=1 ;
+for (let i=1; i<=5; i++) {
+  for (let j=1; j<=i; j++){
+    document.write(a)
+    a++
+  }
+  document.write("<br>")
+}
+
+for (let i=0; i<=5; i++){
+  if(i==3){
+    document.write(i)
+    break;
+  }
+  
+}
+
+for (let i=0; i<=5; i++) {
+  if(i==3){
+    continue;
+  }
+  document.write(i)
+}
+
+
+let a= "Hello"
+console.log(a[4])
+      
+let a= "Hello"
+console.log(a[3])
+      
+let a= "Hello"
+console.log(a[2])
+      
+let a= "Hello"
+console.log(a[1])
+      
+let a= "Hello"
+console.log(a[0])
+      
+let a= "Hello"
+console.log(a.length)
+
+      let a= "hello"
+      for(let i=0; i<=4; i++){
+        document.write(a[i])
+      }
+
+let a= "Hello"
+a[1]="T"
+console.log(a)
+
+let a= ["H", "e", "l", "l", "o"]
+a[1]="T"
+console.log(a)
+
+let a="Hello"
+for (let i=0; i<=a.length; i++)
+
+console.log(a[i])
+      
+let a="Hello"
+for (let i=0; i<=a.length-1; i++)
+
+console.log(a[i])
+      
+let a="Hello"
+for (let i=0; i<a.length; i++)
+
+console.log(a[i])
+
+let a="hello"
+for (let i=0; i<a.length; i++){
+  if (i%2==0){
+    
+  console.log(a[i])
+  }
+}
+
+
+let a= "Hello"
+console.log(a.toUpperCase())
+
+let a= "Hello"
+console.log(a.toLowerCase())
+
+let a="       Hello"
+document.write(a.length)
+c= a.trim()
+document.write(c.length)
+      
+
+let a= "    Hello"
+document.write(a.length)
+document.write(a.trimStart())
+document.write(a.trimEnd())
+
+
+let a="Hello"
+let b="S"
+c= a.concat(b)
+document.write(c)
+
+let a= "Hello"
+document.write(a.at(1))
+
+let a= "Hello"
+document.write(a.charAt(1))
+
+
+let a= "Hello"
+document.write(a.charCodeAt(1))
+
+   
+   let a= "hello"
+   document.write(a.slice(1))
+
+  let a="hello"
+  b=a.slice(1,2)
+  c=a.slice(2,3)
+  document.write(b+c)
+
+  let a="hello"
+  b=a.slice(1,2)
+  c=a.slice(4,5)
+  document.write(b+c)
+
+
+  let a="hello"
+  document.write(a.slice(-3,-1))
+
+  let a= "hello"
+  document.write(a.substring(1))
+
+  let a="hello"
+  document.write(a.substring(-1))
+
+
+  let a="proskill"
+for(let i=7; i>=4; i--){
+  document.write(a[i])
+}
+
+let a="hello"
+document.write(a.substr(1,3))
+
+
+let a="proskill"
+document.write(a.substr(5,2))
+
+for (let i=1; i<=5; i++) {
+  for (let j=1; j<=i; j++){
+    document.write("*")
+  }
+  document.write("<br>")
+}
+
+
+
+
+let a=["hello", 12, true, null]
+console.log(a)
+console.log(typeof(a))
+
+let a=['R','e', 'w', 'a']
+console.log(a[2])
+
+
+let a=['R','e', 'w', 'a']
+console.log(a[2]='T')
+
+
+let a=["rewa"]
+console.log(a[0])
+console.log(a[0][2])
+
+
+let a=["r", "e", "w", "a", "hello"]
+console.log(a.length)
+
+
+let b= new Array("hello", "hi")
+console.log(b)
+
+
+let a=["r", "e", "w", "a", "hello"]
+console.log(Array.isArray(a))
+
+
+let hello=["rewa", "satna", "indore"]
+for(i=0; i<=2; i++){
+  document.write( " ",hello[i])
+}
+
+search method;
+1. index of
+let a='hello'
+b=a.indexOf("h")
+console.log(b)
+
+
+let a='hello h'
+b=a.lastIndexOf("h")
+console.log(b)
+
+
+ let a='hi my name is pooja and puja'
+ b=a.lastIndexOf("p")
+ console.log(b)
+
+
+let a='hi my name is pooja and puja'
+b=a.indexOf("p")
+console.log(b)
+
+
+let a='hi my name is hello'
+b=a.indexOf('h',10)
+console.log(b)
+
+let a="world"
+let b=a.startsWith("w")
+console.log(b)
+
+
+let a="world"
+let b=a.endsWith("d")
+console.log(b)
+
+
+let a="world"
+let b=a.includes("d")
+console.log(b)
+
+
+let a="pooja"
+let b=a.repeat(2)
+console.log(b)
+console.log(a.length)
+console.log(b.length)
+
+
+
+let a="world"
+let b=a[1].repeat(3)
+console.log(b)
+
+
+let a="world"
+let b=a.replace("w", "s")
+console.log(b)
+
+let a="hi my name hermione"
+b=a.replaceAll("h", "s")
+console.log(b)
+
 
 
     </script>
